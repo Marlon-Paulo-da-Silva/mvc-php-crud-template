@@ -1,0 +1,9 @@
+Allow from All
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # RewriteBase /mvc-php
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ index.php [QSA,NC]
+
+</IfModule>

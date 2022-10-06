@@ -1,0 +1,9 @@
+{
+  "name":"wdev/mvc",
+  "autoload": {
+    "psr-4": {
+      "App\\":"app/"
+    }
+    
+  }
+}
