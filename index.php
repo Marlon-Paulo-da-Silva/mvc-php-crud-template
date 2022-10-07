@@ -12,5 +12,8 @@ include __DIR__ . '/app/Routes/pages.php';
 // inclui as rotas do painel
 include __DIR__ . '/app/Routes/admin.php';
 
+// inclui as rotas das chaves
+include __DIR__ . '/app/Routes/chaves.php';
+
 $obRouter->run()
           ->sendResponse();

@@ -3,14 +3,15 @@
 use App\Http\Response;
 
 use App\Controller\Pages;
+use App\Controller\Chaves;
 
-$obRouter->get('/index',[
+$obRouter->get('/',[
   function(){
-    return new Response(200, Pages\Home::getHome());
+    return new Response(200, Chaves\Home::getHome());
   }
 ]);
 
-$obRouter->get('/sobre',[
+$obRouter->get('/chaves',[
   function(){
     return new Response(200, Pages\About::getAbout());
   }

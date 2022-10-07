@@ -1,0 +1,91 @@
+<div style="height:100%;">
+  <section class="corpo">
+     <div class="container">
+        <div class="conteudo">
+           <h1 class="titulo_placa">Códigos e Scripts</h1>
+           <div class="corpo-interno">
+              <div class="corpo-interno__chamada grid-12" style="height: 225px;">
+                 <div class="corpo-interno__chamada__imagem">
+                    <img src="{{URL}}/includes/files_default/note.png">
+                 </div>
+                 <div class="corpo-interno__chamada__texto">
+                    <h1>Tenha o controle de suas <span>chaves</span></h1>
+                    <p>gerencie aonde estão as chaves dos imóveis</strong>.</p>
+                    <span class="corpo-interno__chamada__btn">Exemplos</span>
+                 </div>
+              </div>
+              <div class="">
+                 <div class="corpo-interno__categoria grid-12">
+                    <div class="corpo-interno__categoria__titulo">
+                       <h1 class="corpo-interno__categoria__cabecalho__titulo corpo-interno__tabela__celula--divisor">
+                          <i class="fa fa-clone corpo-interno__categoria__cabecalho__titulo__icone"></i> Tags Adicionais do
+                          Site
+                          <span>Adicione códigos auxiliares em seu site de forma simples </span>
+                       </h1>
+                       <!-- <a href="#createCode" rel="modal:open"> -->
+                       <!-- <a href="#completeModal" rel="modal:open"> -->
+                       <a href="#modal-new-code" rel="modal:open">
+                          <span class="corpo-interno__categoria__cabecalho__texto">
+                             <!-- <i class="corpo-interno__categoria__cabecalho__icone fa fa-plus"></i> Novo -->
+                             <i class="corpo-interno__categoria__cabecalho__icone fa fa-plus"></i> Novo
+                          </span>
+                       </a>
+                    </div>
+                    <table class="corpo-interno__tabela corpo-interno__tabela">
+                       <thead id="titulo_pp">
+                          <tr>
+                             <th class="corpo-interno__tabela__cabecalho corpo-interno__tabela__celula--divisor coluna-1">
+                                Exibir
+                                em
+                             </th>
+                             <th class="corpo-interno__tabela__cabecalho corpo-interno__tabela__celula--divisor coluna-4">
+                                Identificador
+                             </th>
+                             <th class="corpo-interno__tabela__cabecalho  coluna-1--s">Ações</th>
+                          </tr>
+                       </thead>
+                       <tbody class="corpo-interno__tabela__tabela-conteudo" id="table_code">
+                          <tr data-codigo="" class="corpo-interno__tabela__linha">
+                             <td class="corpo-interno__tabela__celula coluna-1"><span class="exibir-em exibir-em--lilas">
+                              <a style="color: inherit" href="mod_catalogo_imoveis_listar.php" target="_blank">
+                                <?php echo $row['exibir_em'] ?> <i class="fa fa-external-link"></i>
+                                </a></span>
+                             </td>
+                             <td class="corpo-interno__tabela__celula coluna-4">
+                                <?php echo $row['name_id'] ?>
+                             <td class="corpo-interno__tabela__celula coluna-1--s"><a
+                                class=" corpo-interno__tabela__celula__item"><i
+                                class="icone icone--sucesso fa fa-edit"></i></a><a
+                                href="server.php?del=<?php echo $row['id']; ?>"
+                                class=" corpo-interno__tabela__celula__item excluir-popup"><i
+                                class="icone icone--atencao fa fa-times"></i></a></td>
+                          </tr>
+                          <tr data-codigo="" class="corpo-interno__tabela__linha">
+                             <td class="corpo-interno__tabela__celula coluna-1"><span class="exibir-em exibir-em--lilas">
+                              <a style="color: inherit" href="mod_catalogo_imoveis_listar.php" target="_blank">
+                                Tela<i class="fa fa-external-link"></i>
+                                </a></span>
+                             </td>
+                             <td class="corpo-interno__tabela__celula coluna-4">
+                                Marlon
+                             <td class="corpo-interno__tabela__celula coluna-1--s"><a
+                                class=" corpo-interno__tabela__celula__item"><i
+                                class="icone icone--sucesso fa fa-edit"></i></a><a
+                                href="server.php?del=<?php echo $row['id']; ?>"
+                                class=" corpo-interno__tabela__celula__item excluir-popup"><i
+                                class="icone icone--atencao fa fa-times"></i></a></td>
+                          </tr>
+                       </tbody>
+                    </table>
+                 </div>
+                 <link rel="stylesheet" type="text/css" href="{{URL}}/includes/files_default/ferramentas_conversao.css">
+                 <script type="text/javascript" src="{{URL}}/includes/files_default/ferramentas_conversao_listar.js"
+                    charset="utf-8"></script>
+                 <script type="text/javascript" src="{{URL}}/includes/files_default/tooltip-balao.js(1).js"></script>
+              </div>
+           </div>
+        </div>
+     </div>
+  </section>
+</div>
+
