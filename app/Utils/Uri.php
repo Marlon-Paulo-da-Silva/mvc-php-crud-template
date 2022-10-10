@@ -43,8 +43,8 @@ class URI {
        * Faz a verificação se for
        * diferente de https
        */
-      if(strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') === false)
-    //   if($_SERVER['REQUEST_SCHEME'] === "http")
+    //   if(strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') === false)
+      if($_SERVER['REQUEST_SCHEME'] === "http")
       {
           self::$protocolo = 'http://'; //Atribui o valor http
       }
